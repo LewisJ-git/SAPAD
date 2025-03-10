@@ -24,11 +24,14 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 
+/* Color */
+:root{--dark:#0A3981;--light:#e5f3fc;--accent:#E38E49;--dim:#1F509A}
+
 /* Body */
 html,body {font-family:"Georama",Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .display-container{position:relative}
-.flex-vertical{display:flex;flex-direction:column}
+.dark-container{background:var(--dark);color:var(--light)}.light-container{background:var(--light);color:var(--dark)}
 
 /* Text */
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
@@ -36,6 +39,7 @@ h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
 .text-white{color:#fff!important}
 .logo-font{font-family:"Ysabeau SC",sans-serif}.title-font{font-family:"Staatliches",Arial,sans-serif}.text-font{font-family:"Georama",sans-serif}
 .padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}
+.margin-large{margin-top:24px;margin-bottom:24px}
 .xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}.jumbo{font-size:64px!important}
 
 /* Animations */
