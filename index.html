@@ -6,39 +6,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Ysabeau+SC:wght@1..1000&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.0/pixi.min.js"></script>
 </head>
 
 <body>
+
     <!-- logo bar -->
-    <div>
-        <div class="padding-large dark-container logo-card">
-            <div class="logo-card-grid">
-                <h2 class="xlarge logo-font">S&amp;A PAD</h2>
-                <hr style="width:20%">
+    <section>
+        <div class="dark-container center-flex">
+            <div class="center-grid grid-gap-large logo-card-grid">
+                <h2 class="xlarge logo-font" style="justify-self:start;">S&amp;A PAD</h2>
                 <p>Call: +1 (409) 719 - 2252</p>
                 <p>Email: Sales@sapadcompany.com</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="bgimg display-container text-white text-font">
+    <!-- Navigation bar -->
+    <section>
+        <div class="center-flex" style="background: var(--light)">
+            <nav class="center-grid nav-grid grid-gap-xxl">
+                <a href="#">
+                    <h4>Home</h4>
+                </a>
+                <a href="#">
+                    <h4>Products</h4>
+                </a>
+                <a href="#">
+                    <h4>Services</h4>
+                </a>
+                <a href="#">
+                    <h4>Contact</h4>
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- <div id="wrap" class="display-container test"></div> -->
+    <section>
+        <div id="depth-viewer" />
+    </section>
+
+    <!-- Hero title -->
+    <div class="display-container text-white text-font" style="height:200vh;">
         <div class="flexbox flex-vertical padding-large flex-vertical" style="height:100%">
             <h1 class="jumbo wide title-font margin-large">Industrial Off-shore Commercial</h1>
             <hr class="border-white" style="margin:0px;width:40%">
-            <div>
-                <h3>Contacts</h3>
-                <h4 class="w3-large w3-center">Sergio Gonzalez</h4>
-                <h4 class="w3-large w3-center">+1 (409) 719 - 2252</h4>
-                <h4 class="w3-large w3-center">Sales@sapadcompany.com</h4>
-            </div>
-
+            <p></p>
         </div>
         <div class="padding-large">
             Powered by <a href="https://www.w3schools.com/w3css/default.asp"></a>
@@ -46,6 +67,17 @@
 
     </div>
 
+
+    <script src="scripts/pixi.4.8.9.js"></script>
+    <script src="scripts/DepthyViewer.js"></script>
+
+    <script>
+        let viewerContainer = document.getElementById("depth-viewer")
+        let viewer = new DepthyViewer(viewerContainer, {});
+        viewer.setImage('images/image-1.webp')
+        viewer.setDepthmap('images/image-1-depth.png')
+    </script>
+    <!-- <script src="/scripts/parallax.js" type="module"></script> -->
 </body>
 
 </html>
