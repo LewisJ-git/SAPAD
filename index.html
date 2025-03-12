@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +22,7 @@
 
     <!-- logo bar -->
     <section>
-        <div class="dark-container center-flex">
+        <div class="dark-container center-flex flex-row">
             <div class="center-grid grid-gap-large logo-card-grid">
                 <h2 class="xlarge logo-font" style="justify-self:start;">S&amp;A PAD</h2>
                 <p>Call: +1 (409) 719 - 2252</p>
@@ -31,42 +33,66 @@
 
     <!-- Navigation bar -->
     <section>
-        <div class="center-flex" style="background: var(--light)">
-            <nav class="center-grid nav-grid grid-gap-xxl">
-                <a href="#">
-                    <h4>Home</h4>
-                </a>
-                <a href="#">
-                    <h4>Products</h4>
-                </a>
-                <a href="#">
-                    <h4>Services</h4>
-                </a>
-                <a href="#">
-                    <h4>Contact</h4>
-                </a>
-            </nav>
-        </div>
-    </section>
-
-    <!-- <div id="wrap" class="display-container test"></div> -->
-    <section>
-        <div id="depth-viewer" />
+        <nav class="center-flex flex-row flex-gap-xxl">
+            <a class="nav-item" href="#">
+                <h5>Home</h5>
+            </a>
+            <a class="nav-item" href="#">
+                <h5>Products</h5>
+            </a>
+            <a class="nav-item" href="#">
+                <h5>Services</h5>
+            </a>
+            <a class="nav-item" href="#">
+                <h5>Contact</h5>
+            </a>
+            <a class="nav-item" href="#">
+                <h5>Quote</h5>
+            </a>
+        </nav>
     </section>
 
     <!-- Hero title -->
-    <div class="display-container text-white text-font" style="height:200vh;">
-        <div class="flexbox flex-vertical padding-large flex-vertical" style="height:100%">
-            <h1 class="jumbo wide title-font margin-large">Industrial Off-shore Commercial</h1>
-            <hr class="border-white" style="margin:0px;width:40%">
-            <p></p>
+    <section>
+        <div class="relative-container" id="depth-viewer">
+            <div class="absolute-container text-font hero-text text-light">
+                <div class="flexbox flex-vertical padding-large flex-vertical">
+                    <h1 class="jumbo wide-spacing title-font margin-large">Industrial Off-shore Commercial</h1>
+                    <hr class="border-white" style="margin:0px;width:40%">
+                    <h5 class="margin-medium">Member of BBB | Over 30 Years of Experience | Member of NIA | Member of SWICA</h5>
+                    <button class="button padding-medium small-spacing">Request a Quote</button>
+                </div>
+            </div>
         </div>
-        <div class="padding-large">
-            Powered by <a href="https://www.w3schools.com/w3css/default.asp"></a>
+    </section>
+
+    <!-- Introduction -->
+    <section>
+        <div class="padding-large center-flex flex-column margin-large">
+            <p class="intro-text text-center">We at S&amp;A PAD produce premier industrial insulation covers and blankets for you to use. These covers can insulate heat for many different uses so look through our website to learn more. If you are interested in purchasing high-quality industrial insulation blankets, give us a call today.</p>
+            <div class="intro-cards center-flex flex-row flex-gap-xxl margin-large">
+                <div class="card center-flex flex-column padding-medium">
+                    <img src="images/image-2.webp" />
+                    <h4 class="text-center">Prompt and Responsive</h4>
+                    <p>When you have questions or concerns about our industrial insulation blankets, our team will get you answers quickly and efficiently.<br/><br/>For better clarification of our products, feel free to download our brochure. Learn all about our custom process to make industrial insulation blankets and much more.</p>
+                </div>
+                <div class="card center-flex flex-column padding-medium">
+                    <img src="images/image-3.webp" />
+                    <h4 class="text-center">Complete In-House Services</h4>
+                    <p>Flexin Manufacturing Inc can establish computations, needs, and alternate solutions to any insulating problem you may have.<br/><br/>Know that we can develop designs for industrial insulation covers from your prints, engineering models, or existing parts. We've technicians who are also available for custom field design work.</p>
+                </div>
+                <div class="card center-flex flex-column padding-medium">
+                    <img src="images/image-4.webp" />
+                    <h4 class="text-center">Insulated Blanket Benefits</h4>
+                    <p>Interested in purchasing our custom industrial insulation covers? Call Flexin Manufacturing Inc today at (832) 365-4742 for more information.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
-
+    <section>
+        <div style="height:400vh;"></div>
+    </section>
 
     <script src="scripts/pixi.4.8.9.js"></script>
     <script src="scripts/DepthyViewer.js"></script>
@@ -77,7 +103,6 @@
         viewer.setImage('images/image-1.webp')
         viewer.setDepthmap('images/image-1-depth.png')
     </script>
-    <!-- <script src="/scripts/parallax.js" type="module"></script> -->
 </body>
 
 </html>

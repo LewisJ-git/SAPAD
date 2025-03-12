@@ -8,11 +8,6 @@ html {
     grid-template-columns: 3fr 1fr 1fr;
 }
 
-.nav-grid {
-    grid-auto-flow: column;
-    width: 50%;
-}
-
 .bgimg {
     background: linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%), url('../images/image-1.webp');
     background-position: center;
@@ -25,14 +20,26 @@ html {
     background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.75) 35%, rgba(0,0,0,0) 45%); 
 }
 
-.canvas {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    user-select: none;
+canvas {
+    position: relative !important;
 }
 
-#depth-viewer {
+#depth-viewer canvas {
     filter: brightness(0.8);
+}
+
+.hero-text {
+    z-index: 2;
+}
+
+.intro-text {
+    width: 70%;
+}
+
+.intro-cards {
+    align-items: flex-start;
+}
+
+.intro-cards .card p {
+    width: 200px;
 }
