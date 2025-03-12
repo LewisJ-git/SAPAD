@@ -1141,12 +1141,13 @@ PIXI.DepthPerspectiveFilter = function(texture, quality, sprite)
         let window_start = 0;
         let window_end = 0.25;        
         let oldy = Math.cos(now * Math.PI * 2 / options.animateDuration / 1000) * options.animateScale.y
-        let newy = (-12 * (scrollY >= window_start ? scrollY : 0)) + (11 / 5);
-        console.log(newy)
+        let newy = (-30 * (scrollY >= window_start ? scrollY : 0)) + (11 / 5);
+        let yOffset = newy < -2 ? -2 : newy;
+        //console.log(yOffset)
         depthFilter.offset = {
           // x : Math.sin(now * Math.PI * 2 / options.animateDuration / 1000) * options.animateScale.x,
           x : 0,
-          y : (newy < -3.6 ? -3.6 : newy)
+          y : yOffset
           
           //y : Math.cos((scrollY * Math.PI * (-48)) / 4)
         };
