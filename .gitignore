@@ -1,3 +1,5 @@
 w3.css
 *.jpg
 images/card.png
+/images/depthmaps
+scripts/parallax.js
