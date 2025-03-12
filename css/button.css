@@ -1,0 +1,35 @@
+button {
+    border: none;
+    font-weight: bold;
+    background: var(--accent);
+    text-transform: uppercase;
+    color: var(--dim);
+    transition: all 1000ms;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid var(--dim);
+}
+
+button:hover {
+    color: var(--light);
+    transform: scale(1);
+    outline: 2px solid var(--dim);
+    box-shadow: 4px 5px 17px -4px var(--dim);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--dim);
+    transform: skewX(30deg);
+    z-index: -1;
+    transition: width 800ms cubic-bezier( 0.23, 1, 0.32, 1 );
+}
+
+button:hover::before {
+    width: 250%;
+}
