@@ -6,16 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" href="css/template.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <meta name="description" content="">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="global-css/template.css">
+    <link rel="stylesheet" href="global-css/button.css">
+    <link rel="stylesheet" href="global-css/nav.css">
+    <link rel="stylesheet" href="homepage/index.css">
+
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Ysabeau+SC:wght@1..1000&display=swap"
         rel="stylesheet">
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.0/pixi.min.js"></script>
+
+    <!-- Icon -->
+    <!-- <link rel="icon" sizes="192x192" href="/icon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />  -->
 </head>
 
 <body>
@@ -70,20 +83,21 @@
     <section>
         <div class="padding-large center-flex flex-column margin-large">
             <p class="intro-text text-center">We at S&amp;A PAD produce premier industrial insulation covers and blankets for you to use. These covers can insulate heat for many different uses so look through our website to learn more. If you are interested in purchasing high-quality industrial insulation blankets, give us a call today.</p>
-            <div class="intro-cards center-flex flex-row flex-gap-xxl margin-large">
-                <div class="card center-flex flex-column padding-medium">
-                    <img src="images/image-2.webp" />
-                    <h4 class="text-center">Prompt and Responsive</h4>
+            <!-- <div class="intro-cards center-flex flex-row flex-gap-xxl margin-large"> -->
+            <div class="pure-g margin-large intro-cards">
+                <div class="padding-medium center-flex flex-column pure-u-1 pure-u-sm-1-3">
+                    <img class="pure-img" src="homepage/images/image-2.webp" />
+                    <h4 class="text-center text-dim"><b>Prompt and Responsive</b></h4>
                     <p>When you have questions or concerns about our industrial insulation blankets, our team will get you answers quickly and efficiently.<br/><br/>For better clarification of our products, feel free to download our brochure. Learn all about our custom process to make industrial insulation blankets and much more.</p>
                 </div>
-                <div class="card center-flex flex-column padding-medium">
-                    <img src="images/image-3.webp" />
-                    <h4 class="text-center">Complete In-House Services</h4>
+                <div class="padding-medium center-flex flex-column pure-u-1 pure-u-sm-1-3">
+                    <img class="pure-img" src="homepage/images/image-3.webp" />
+                    <h4 class="text-center text-dim"><b>Complete In-House Services</b></h4>
                     <p>Flexin Manufacturing Inc can establish computations, needs, and alternate solutions to any insulating problem you may have.<br/><br/>Know that we can develop designs for industrial insulation covers from your prints, engineering models, or existing parts. We've technicians who are also available for custom field design work.</p>
                 </div>
-                <div class="card center-flex flex-column padding-medium">
-                    <img src="images/image-4.webp" />
-                    <h4 class="text-center">Insulated Blanket Benefits</h4>
+                <div class="padding-medium center-flex flex-column pure-u-1 pure-u-sm-1-3">
+                    <img class="pure-img" src="homepage/images/image-4.webp" />
+                    <h4 class="text-center text-dim"><b>Insulated Blanket Benefits</b></h4>
                     <p>Interested in purchasing our custom industrial insulation covers? Call Flexin Manufacturing Inc today at (832) 365-4742 for more information.</p>
                 </div>
             </div>
@@ -100,8 +114,8 @@
     <script>
         let viewerContainer = document.getElementById("depth-viewer")
         let viewer = new DepthyViewer(viewerContainer, {});
-        viewer.setImage('images/image-1.webp')
-        viewer.setDepthmap('images/image-1-depth.png')
+        viewer.setImage('homepage/images/image-1.webp')
+        viewer.setDepthmap('homepage/images/image-1-depth.png')
     </script>
 </body>
 

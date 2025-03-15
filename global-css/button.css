@@ -14,7 +14,7 @@ button:hover {
     color: var(--light);
     transform: scale(1);
     outline: 2px solid var(--dim);
-    box-shadow: 4px 5px 17px -4px var(--dim);
+    box-shadow: 0 0 5px 5px var(--dim);
 }
 
 button::before {
