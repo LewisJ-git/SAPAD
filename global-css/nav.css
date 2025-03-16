@@ -21,3 +21,10 @@ nav:has(a:hover) {
 .nav-item:hover {
     color: var(--light);
 }
+
+@media not screen and (min-width: 35.5em) {
+    nav {gap: 16px!important}
+    nav h5 {
+        font-size: 16px;
+    }
+}

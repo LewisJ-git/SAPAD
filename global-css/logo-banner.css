@@ -1,0 +1,18 @@
+.logo-banner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-banner h2 {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-banner-contacts p {
+    margin: 0 !important;
+}
+
+@media not screen and (min-width: 35.5em) {
+    .logo-banner h2 {margin: 0 !important}
+    .logo-banner-contacts {text-align: left !important}
+}
